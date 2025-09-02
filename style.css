@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.cookie-regular {
+    font-family: "Cookie", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+body{
+    background-color: #194a7a;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.base{
+    background-color:aliceblue;
+    
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: #7593af 10px solid;
+    position: relative;
+}
+.base::before{
+    content: 'Quartz';
+    color: #194a7a;
+    font-family: "Cookie", serif;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 35px;
+    font-family:cursive;
+    transform: translate(-50%,-50%);
+}
+
+.base::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:#194a7a;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.num{
+    --rotate:0deg;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #194a7a;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Cookie", serif;
+    transform: rotate(var(--rotate));
+}
+.num-1{--rotate:30deg;}
+.num-2{--rotate:60deg;}
+.num-3{--rotate:90deg;}
+.num-4{--rotate:120deg;}
+.num-5{--rotate:150deg;}
+.num-6{--rotate:180deg;}
+.num-7{--rotate:210deg;}
+.num-8{--rotate:240deg;}
+.num-9{--rotate:270deg;}
+.num-10{--rotate:300deg;}
+.num-11{--rotate:330deg;}
+.num-12{--rotate:360deg;}
+
+.needle{
+    --rotation:0;
+    position: absolute;
+    width: 15px;
+    height: 40%;
+    background-color: #194a7a;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+    /* border:1px #194a7a solid; */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    
+    
+}
+.sec{
+    width:4px;
+    height:41%;
+    
+    
+}.min{
+    width:12px;
+    height:37%;
+    
+}
+.hrs{
+    width:15px;
+    height:22%;
+    
+}
+
